@@ -14,23 +14,47 @@ export default function Home() {
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Octreotide Calculator */}
+        {/* Noradrenaline Calculator */}
         <Card className="hover:shadow-lg transition-shadow">
           <CardHeader className="pb-3">
-            <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-              <Beaker className="h-6 w-6 text-blue-600" />
+            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
+              <Activity className="h-6 w-6 text-red-600" />
             </div>
-            <CardTitle>Octreotide</CardTitle>
-            <CardDescription>Calculate octreotide infusion rates and dosages</CardDescription>
+            <CardTitle>Noradrenaline</CardTitle>
+            <CardDescription>Calculate noradrenaline infusion rates and dosages</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-500">
-              Manage dosing for gastrointestinal bleeding, hormone-secreting tumors, and other conditions requiring
-              octreotide therapy.
+              Manage vasopressor therapy for hypotension, septic shock, and other conditions requiring blood pressure
+              support.
             </p>
           </CardContent>
           <CardFooter>
-            <Link href="/calculators/octreotide" className="w-full">
+            <Link href="/calculators/noradrenaline" className="w-full">
+              <Button className="w-full">
+                Open Calculator
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </CardFooter>
+        </Card>
+
+        {/* Dopamine Calculator */}
+        <Card className="hover:shadow-lg transition-shadow">
+          <CardHeader className="pb-3">
+            <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mb-2">
+              <Droplet className="h-6 w-6 text-amber-600" />
+            </div>
+            <CardTitle>Dopamine</CardTitle>
+            <CardDescription>Calculate dopamine infusion rates and dosages</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-gray-500">
+              Manage dosing for shock, heart failure, and other conditions requiring dopaminergic support.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link href="/calculators/dopamine" className="w-full">
               <Button className="w-full">
                 Open Calculator
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -88,47 +112,23 @@ export default function Home() {
           </CardFooter>
         </Card>
 
-        {/* Noradrenaline Calculator */}
+        {/* Octreotide Calculator */}
         <Card className="hover:shadow-lg transition-shadow">
           <CardHeader className="pb-3">
-            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
-              <Activity className="h-6 w-6 text-red-600" />
+            <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+              <Beaker className="h-6 w-6 text-blue-600" />
             </div>
-            <CardTitle>Noradrenaline</CardTitle>
-            <CardDescription>Calculate noradrenaline infusion rates and dosages</CardDescription>
+            <CardTitle>Octreotide</CardTitle>
+            <CardDescription>Calculate octreotide infusion rates and dosages</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-500">
-              Manage vasopressor therapy for hypotension, septic shock, and other conditions requiring blood pressure
-              support.
+              Manage dosing for gastrointestinal bleeding, hormone-secreting tumors, and other conditions requiring
+              octreotide therapy.
             </p>
           </CardContent>
           <CardFooter>
-            <Link href="/calculators/noradrenaline" className="w-full">
-              <Button className="w-full">
-                Open Calculator
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-
-        {/* Dopamine Calculator */}
-        <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader className="pb-3">
-            <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mb-2">
-              <Droplet className="h-6 w-6 text-amber-600" />
-            </div>
-            <CardTitle>Dopamine</CardTitle>
-            <CardDescription>Calculate dopamine infusion rates and dosages</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-gray-500">
-              Manage dosing for shock, heart failure, and other conditions requiring dopaminergic support.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link href="/calculators/dopamine" className="w-full">
+            <Link href="/calculators/octreotide" className="w-full">
               <Button className="w-full">
                 Open Calculator
                 <ArrowRight className="ml-2 h-4 w-4" />
